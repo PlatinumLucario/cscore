@@ -1,33 +1,20 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <AssemblyName>CSCore.Ffmpeg</AssemblyName>
-    <TargetFrameworks>net461;netcoreapp2.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <VersionPrefix>1.0.0</VersionPrefix>
     <Copyright>Florian R.</Copyright>
     <Description>.NET Sound Library - FFmpeg Wrapper</Description>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
   </PropertyGroup>
-
   <ItemGroup>
     <ProjectReference Include="..\CSCore\CSCore.csproj" />
   </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp2.0'">
-    <PackageReference Include="System.Configuration.ConfigurationManager" Version="4.4.0" />
-  </ItemGroup>
-
-  <ItemGroup Condition="'$(TargetFramework)' == 'net461'">
-    <Reference Include="System.Configuration" />
-  </ItemGroup>
-
   <ItemGroup>
     <Compile Remove="FFmpeg\**" />
     <EmbeddedResource Remove="FFmpeg\**" />
     <None Remove="FFmpeg\**" />
   </ItemGroup>
-
-
   <ItemGroup>
     <None Include="FFmpeg\bin\unix\x64\libavcodec.so.57">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -84,5 +71,7 @@
     </Content>
     <Content Include="Interops\unused\Readme.txt" />
   </ItemGroup>
-
+  <ItemGroup>
+    <PackageReference Include="System.Configuration.ConfigurationManager" Version="8.0.0" />
+  </ItemGroup>
 </Project>

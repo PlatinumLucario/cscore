@@ -2,19 +2,16 @@
 <Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <AssemblyName>CSCore</AssemblyName>
-    <TargetFrameworks>netstandard2.0</TargetFrameworks>
+    <TargetFrameworks>net8.0</TargetFrameworks>
     <VersionPrefix>1.2.1.1</VersionPrefix>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
-
     <!-- Packet Details -->
     <Copyright>Florian R.</Copyright>
     <Description>.NET Sound Library</Description>
   </PropertyGroup>
-
   <PropertyGroup>
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
-
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
