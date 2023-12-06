@@ -7,7 +7,7 @@ using System.Runtime.InteropServices;
 
 namespace CSCore.MediaFoundation
 {
-    internal static class MediaFoundationCore
+    public static class MediaFoundationCore
     {
         public const int MF_SDK_VERSION = 0x2;
         public const int MF_API_VERSION = 0x70;

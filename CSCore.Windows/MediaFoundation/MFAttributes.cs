@@ -1101,7 +1101,7 @@ namespace CSCore.MediaFoundation
                 throw new ArgumentException("The type of the value is not supported");
         }
 
-        internal bool TryGet<T>(Guid key, out T value)
+        public bool TryGet<T>(Guid key, out T value)
         {
             try
             {

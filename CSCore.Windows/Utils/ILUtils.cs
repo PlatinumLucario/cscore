@@ -2,7 +2,7 @@
 
 namespace CSCore.Utils
 {
-	internal static class ILUtils
+	public static class ILUtils
 	{
 		public static int SizeOf<T>() where T : struct
 		{

@@ -8,6 +8,8 @@
   </PropertyGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\CSCore.Linux\CSCore.Linux.csproj" />
+    <ProjectReference Include="..\..\CSCore.Windows\CSCore.Windows.csproj" />
+    <ProjectReference Include="..\..\CSCore\CSCore.csproj" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.CSharp" Version="4.7.0" />

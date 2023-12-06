@@ -72,6 +72,7 @@
     <None Include="WaveInOut\WaveOutTests.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\CSCore.Windows\CSCore.Windows.csproj" />
     <ProjectReference Include="..\CSCore\CSCore.csproj" />
   </ItemGroup>
   <ItemGroup>
@@ -84,6 +85,11 @@
     <Compile Remove="SoundOut\ALSoundOutBehaviourTests.cs" />
     <Compile Remove="Streams\EqualizerTests.cs" />
     <Compile Remove="WaveInOut\WaveOutTests.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.8.0" />
+    <PackageReference Include="Microsoft.TestPlatform" Version="17.8.0" />
+    <PackageReference Include="MSTest.TestFramework" Version="3.1.1" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

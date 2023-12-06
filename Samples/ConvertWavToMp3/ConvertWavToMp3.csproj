@@ -10,6 +10,7 @@
     <FileVersion>1.0.0.0</FileVersion>
   </PropertyGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CSCore.Windows\CSCore.Windows.csproj" />
     <ProjectReference Include="..\..\CSCore\CSCore.csproj" />
   </ItemGroup>
   <ItemGroup>

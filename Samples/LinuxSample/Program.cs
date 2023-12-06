@@ -1,5 +1,5 @@
 ﻿using System;
-using System.Windows.Forms;
+using Eto.Forms;
 using CSCore.SoundOut;
 using CSCore.Codecs;
 
@@ -10,9 +10,9 @@ namespace LinuxSample
 		public static void Main (string[] args)
 		{
 			OpenFileDialog openfileDialog = new OpenFileDialog () {
-				Filter = CodecFactory.SupportedFilesFilterEn
+				CurrentFilter = CodecFactory.SupportedFilesFilterEn
 			};
-			if (openfileDialog.ShowDialog () == DialogResult.OK) {
+			if (openfileDialog.ShowDialog (new Form()) == DialogResult.Ok) {
 				using (var source = CodecFactory.Instance.GetCodec (openfileDialog.FileName)) {
 					using (var soundOut = new ALSoundOut ()) {
 						soundOut.Initialize (source);

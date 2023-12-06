@@ -15,7 +15,7 @@ namespace CSCore.Test
 
         public static IWaveSource TestMp3()
         {
-            return CodecFactory.Instance.GetCodec(TestMp3AsStream(), "mp3");
+            return CodecFactory.Instance.GetCodec("mp3");
         }
 
         public static MemoryStream TestMp3AsStream()
@@ -25,7 +25,7 @@ namespace CSCore.Test
 
         public static IWaveSource TestWav2S()
         {
-            return CodecFactory.Instance.GetCodec(Properties.Resources.test_2s, "wave");
+            return CodecFactory.Instance.GetCodec("wave");
         }
     }
 }

@@ -10,6 +10,7 @@
     <AppDesigner Include="Properties\" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CSCore.Windows\CSCore.Windows.csproj" />
     <ProjectReference Include="..\..\CSCore\CSCore.csproj" />
   </ItemGroup>
   <ItemGroup>

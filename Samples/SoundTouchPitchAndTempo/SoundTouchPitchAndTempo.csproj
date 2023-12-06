@@ -11,6 +11,7 @@
     <Content Include="Libs\SoundTouch.dll" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\CSCore.Windows\CSCore.Windows.csproj" />
     <ProjectReference Include="..\..\CSCore\CSCore.csproj" />
   </ItemGroup>
   <ItemGroup>
